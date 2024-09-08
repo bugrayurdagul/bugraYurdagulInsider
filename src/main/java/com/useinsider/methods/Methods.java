@@ -36,7 +36,7 @@ public class Methods {
     }
 
     public List<String> listTabs() {
-        return new ArrayList<String>(Driver.getDriver().getWindowHandles());
+        return new ArrayList<>(Driver.getDriver().getWindowHandles());
     }
 
     public WebElement waitForVisibility(WebElement element) {
