@@ -15,11 +15,7 @@ public class OpenPositionsPage extends Methods {
     public WebElement slct_FindByLocation_OpenPositionsPage;
     @FindBy(css = "#filter-by-department")
     public WebElement slct_FilterByDepartment_OpenPositionsPage;
-    @FindBy(css = "[data-location='istanbul-turkey'][data-team='qualityassurance']")
-    public WebElement div_FilteredJobControl_OpenPositionsPage;
 
-    @FindBy(css = "#jobs-list .position-list-item")
-    public WebElement deneme;
     @FindBys(@FindBy(css = "#jobs-list .position-list-item"))
     public List<WebElement> div_FilteredJobs_OpenPositionsPage;
 

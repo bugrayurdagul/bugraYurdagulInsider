@@ -36,11 +36,7 @@ public class Methods {
     }
 
     public List<String> listTabs() {
-        List<String> list = new ArrayList<String>();
-        for (String window : Driver.getDriver().getWindowHandles()) {
-            list.add(window);
-        }
-        return list;
+        return new ArrayList<String>(Driver.getDriver().getWindowHandles());
     }
 
     public WebElement waitForVisibility(WebElement element) {
